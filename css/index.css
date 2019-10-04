@@ -179,6 +179,24 @@ a {
   align-items: center;
   padding: 1rem 0rem;
 }
-.jumbo-logo {
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+body {
+  color: white;
+}
+body .container {
+  margin: 0 auto;
+}
+body .jumbotron {
+  background-color: blue;
   width: 100%;
 }
