@@ -166,18 +166,51 @@ img {
   height: auto;
 }
 .container {
-  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
-a {
-  text-decoration: none;
+.navigation {
+  position: fixed;
+  top: 0;
+  background: #212529;
+  width: 100%;
+  overflow: hidden;
 }
-.nav-container {
+.navigation .nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  position: fixed;
+}
+@media ( max-width 500px ) {
+  .navigation .nav-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+.navigation .nav-container .nav {
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0rem;
+}
+@media (max-width: 500px) {
+  .navigation .nav-container .nav {
+    width: 80%;
+  }
+}
+.navigation .nav-container .nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .navigation .nav-container .nav a {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
 }
 .footer {
   width: 100%;
@@ -198,5 +231,8 @@ body .container {
 }
 body .jumbotron {
   background-color: blue;
+  width: 100%;
+}
+body .jumbotron img {
   width: 100%;
 }
